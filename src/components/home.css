@@ -1,0 +1,113 @@
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 30px;
+    padding-left: 30px;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.main-container-title{
+    color: var(--textcolor);
+}
+.main-container-box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.main-container img{
+    padding-top: 70px;
+    padding-left: 60px;
+}
+
+.footer-section{
+    display: flex;
+    gap:20px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.footer-section a{
+    transition: 0.5s;
+   }
+   .footer-section a:hover{
+    margin:8px;
+    padding: 2px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    transform: scale(1.1);
+   }
+@media screen and (max-width:1024px) {
+    .main-container{
+        padding-left: 14px;
+    }
+   .main-container img{
+    padding-right: 1rem;
+   }
+}
+
+@media screen and (max-width:780px)  {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container-box{
+        padding-left: 8px;
+        padding-top: 2rem;
+        padding-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   .main-container-title{
+    padding-top: 0;
+   }
+   .main-container-description{
+    padding: 1rem;
+   }
+   .footer-section{
+    padding-bottom: 2rem;
+   }
+   
+}
+
+@media  screen and (max-width: 560px) {
+    .main-container{
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    .main-container-box{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem; 
+    }
+    .main-container img{
+        padding-top: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen  and (max-width:418px){
+    .main-container{
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .main-container-box{
+        padding-top: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem; 
+    }
+    .main-container img{
+        padding-top: 70px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .main-container-title{
+        font-size: 45px;
+    }
+    .main-container-description{
+        font-size: 24px;
+    }
+}

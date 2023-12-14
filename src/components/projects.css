@@ -1,0 +1,133 @@
+.project-section-box{
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-image: url('./assets/skills.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+}
+.project-section-title{
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.project-1{
+    padding-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.project-section-description img{
+    width:600px;
+    height:400px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.project-section-description img:hover{
+    transform: scale(1.05);
+}
+
+.project-section-description p{
+    padding-right: 4rem;
+    align-items: center;
+    padding-top: 8rem;
+}
+.project-section-description a{
+    transition: 0.5s;
+}
+.project-section-description a:hover{
+    color: var(--primary);
+}
+.project-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.project-3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width:1024px){
+    .project-section-description img{
+        width:400px;
+        height:300px;
+    }
+    .project-section-description p{
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .project-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-1 img{
+        width:500px;
+        height:350px; 
+    }
+
+.project-2{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.project-2 img{
+    width:500px;
+    height:350px;
+}
+.project-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-3 img{
+    width:500px;
+    height:350px; 
+}
+}
+
+@media screen and (max-width:560px){
+    .project-section-description img{
+        width:400px;
+        height:300px;
+    }
+    .project-section-description p{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+    }
+}
+@media screen and (max-width:418px) {
+    .project-section-description img{
+        width:350px;
+        height:200px;
+    }
+    .project-section-description p{
+        font-size: 21px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .project-section-description img{
+        width:320px;
+    }
+    .project-section-description p{
+        font-size: 20px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
